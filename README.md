@@ -18,10 +18,6 @@
 
 I architect complex, distributed systems with an emphasis on offline-first architecture, zero-trust security models, and real-time collaboration. My work spans enterprise-grade solutions, edge computing infrastructure, and blockchain ecosystems where resilience, fault tolerance, and deterministic behavior are non-negotiable.
 
-<div align="center">
-  <img src="https://media.giphy.com/media/HscDLzkO8EOTmgkhQP/giphy.gif" width="400">
-</div>
-
 > "I don't just build systems. I craft architectures that gracefully handle chaos, embrace asynchronicity, and thrive in distributed environments."
 
 ## 🛠️ Technical Arsenal
