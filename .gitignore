@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# environment variables
+.env.local
+.env*.local
+
+# vercel
+.vercel
+
+# editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# typescript
+*.tsbuildinfo
