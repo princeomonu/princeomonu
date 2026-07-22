@@ -13,13 +13,17 @@ Staff Software Engineer · Software Architecture · Backend Systems · Developer
 ## Selected Work
 
 ### Facility Scope
-A Rust-based tool for modelling and analysing software systems using the Facility Model.
+A private Rust-based developer tool for modelling and analysing software systems using the Facility Model.
+
+**Focus:** system structure, ownership, workflows, failure handling, and implementation evidence.
 
 ### KadMap
-An offline-first enterprise computing platform for secure local application deployment and collaboration.
+A private offline-first enterprise computing platform for secure local application deployment, device management, and collaboration in constrained network environments.
+
+**Role:** CTO and lead architect.
 
 ### WireGuard Utils
-A TypeScript library for generating and managing WireGuard keys and configurations.
+A public TypeScript library for generating and managing WireGuard keys and configurations.
 
 ## Current Focus
 
