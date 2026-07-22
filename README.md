@@ -35,4 +35,4 @@ Architecture, backend engineering, developer tooling, and software education.
 
 ## Links
 
-Portfolio · LinkedIn · YouTube
+[princeomonu.com](https://princeomonu.com) · [LinkedIn](https://linkedin.com/in/princeomonu) · [YouTube](https://youtube.com/@princeomonu)
