@@ -43,6 +43,11 @@ const SEASONS = [
   { id: 'season-4', title: 'Building a Browser-First OS', status: 'Planned', statusActive: false, episodes: [] },
 ];
 
+const SHOW_ARCHITECTURE_SERIES = false;
+const NAV_ITEMS = SHOW_ARCHITECTURE_SERIES
+  ? ['About', 'Series', 'Experience', 'Capabilities', 'Ideas']
+  : ['About', 'Experience', 'Capabilities', 'Ideas'];
+
 // Capabilities Matrix
 const CAPABILITIES = [
   {
@@ -70,61 +75,111 @@ const CAPABILITIES = [
 // Experience Timeline
 const EXPERIENCES = [
   {
-    role: 'Chief Technology Officer',
-    company: 'KadMap Systems',
-    period: '2021 — Present',
-    type: 'Leadership',
+    role: 'Business Automation & Systems Lead',
+    company: 'Premium Power Solutions Limited',
+    period: 'Feb 2026 — Present',
+    location: 'Lagos State, Nigeria · Remote',
+    type: 'Full-time',
     summary:
-      'Owned technical direction, system architecture, and engineering execution for a pre-production field-operations platform. Built and used internally; did not reach external customer production.',
+      'Architecting and building the software, automation, and digital systems supporting operations across a power solutions company.',
     contributions: [
-      'Hired and led up to 12 engineers across backend, frontend, and systems work.',
-      'Designed an offline-first platform: Linux, containerized services, WireGuard networking, device identity, and update architecture.',
-      'Established engineering standards, automated testing, and onboarding processes.'
+      'Built a multi-platform business system on a shared Convex backend spanning an admin portal, public website, and field operations mobile app.',
+      'Designed the unified data model and workflows for customers, technicians, rentals, service requests, invoicing, payments, and role-based access.',
+      'Implemented multi-stage service operations, BudPay payment integration, AI-assisted quote generation, and a customer booking assistant.',
+      'Built internal rental, inventory, billing, and performance systems using Zoho Sheet and Excel.',
+      'Designed reliable operational dashboards and tooling within spreadsheet performance and compatibility constraints.',
+      'Translate business operations into maintainable software systems, workflows, and internal tools.'
     ]
   },
   {
-    role: 'Staff Software Engineer / Consultant',
-    company: 'Global Technical Engagements',
-    period: '2019 — 2021',
-    type: 'Consulting',
-    summary: 'Consulted for international organizations on distributed system scaling, backend platform design, and API security modernization.',
-    contributions: [
-      'Re-architected monolithic legacy backends into modular event-driven microservices.',
-      'Reduced average system latency by 60% across high-traffic core endpoints.',
-      'Mentored mid-level software engineers on systems decomposition and Rust programming.'
-    ]
-  },
-  {
-    role: 'Business Automation Manager',
-    company: 'Premium Power Solutions',
-    period: '2018 — 2020',
+    role: 'Chief Technology Officer',
+    company: 'KadMap',
+    period: 'Jul 2022 — Nov 2025',
+    location: 'Abuja, Federal Capital Territory, Nigeria · On-site',
     type: 'Full-time',
-    summary: 'Directed digital transformation and workflow automation for enterprise power systems operations.',
+    summary:
+      'Owned the technical direction and led the architecture and development of KadMap, an offline-first enterprise computing platform for secure application deployment, data management, and collaboration in constrained network environments.',
     contributions: [
-      'Automated core inventory and asset tracking pipelines.',
-      'Integrated telemetry monitoring systems with centralized enterprise dashboards.'
+      'Defined the architecture across identity, licensing, workspaces, deployment, storage, logging, device management, and infrastructure operations.',
+      'Designed secure local connectivity using WireGuard, controlled networking, and split DNS.',
+      'Architected the device lifecycle covering registration, activation, licensing, updates, rollback, and recovery.',
+      'Led the design of an A/B operating-system update process using RAUC.',
+      'Established service boundaries across backend, client, infrastructure, and system components.',
+      'Translated product requirements into technical roadmaps and led engineering execution while remaining hands-on.',
+      'Core platform built primarily in Go, with supporting components in TypeScript, Shell, and C.'
     ]
   },
   {
-    role: 'Senior Software Engineer / Lead Engineer',
-    company: 'Klosters Energy Services',
-    period: '2016 — 2019',
-    type: 'Full-time',
-    summary: 'Built robust backend services and data pipelines for energy sector operations.',
+    role: 'Product & Engineering Lead',
+    company: 'La Chariz Groups',
+    period: 'Aug 2024 — Jan 2025',
+    type: 'Leadership',
+    summary: 'Led backend and frontend teams delivering production web platforms across education, real estate, and sports management.',
     contributions: [
-      'Developed high-throughput telemetry data ingestion services.',
-      'Optimized database queries and storage schemas for high-frequency time-series data.'
+      'Translated business goals and product requirements into clear technical priorities, delivery plans, and implementation scopes.',
+      'Coordinated frontend and backend engineers across multiple products and concurrent delivery cycles.',
+      'Reviewed system designs, technical approaches, and implementation progress to maintain quality and architectural consistency.',
+      'Worked across product, design, engineering, and business stakeholders to clarify requirements and resolve delivery risks.',
+      'Defined feature priorities, acceptance criteria, release goals, and team responsibilities.',
+      'Supported engineers through planning, technical decision-making, reviews, testing, and production delivery.',
+      'Helped establish reusable patterns and shared engineering practices across the product portfolio.',
+      'Maintained alignment between product direction, technical constraints, team capacity, and business outcomes.'
     ]
   },
   {
     role: 'Lead Software Engineering Instructor',
     company: 'Bravort Institute',
-    period: '2015 — 2018',
+    period: 'Aug 2024 — Jan 2025',
     type: 'Teaching',
-    summary: 'Trained and mentored aspiring engineers in advanced backend architecture, data structures, and systems design.',
+    summary:
+      'Teaching advanced software engineering topics to technical cohorts, bridging foundational theory with real-world system design and production engineering.',
     contributions: [
-      'Created and taught advanced backend engineering modules to 500+ developers.',
-      'Established practical capstone project guidelines reflecting real-world distributed constraints.'
+      'Designed and delivered practical instruction across backend engineering, software architecture, databases, APIs, and system design.',
+      'Helped learners understand how production systems are structured, how data moves, and how technical decisions affect reliability and maintainability.',
+      'Translated complex engineering concepts into clear mental models, examples, and implementation exercises.',
+      'Guided learners through project architecture, code reviews, debugging, and technical decision-making.',
+      'Mentored developers on moving from feature implementation toward stronger engineering judgment.',
+      'Connected classroom concepts to real production concerns such as scalability, failure handling, security, deployment, and long-term system evolution.',
+      'Supported curriculum development and improved the structure of technical learning materials.'
+    ]
+  },
+  {
+    role: 'Senior Lead Software Engineer',
+    company: 'Klosters Energy Services',
+    period: 'Sep 2020 — Nov 2022',
+    location: 'Abuja, Nigeria',
+    type: 'Full-time',
+    summary: 'Designed and led development of a Real-Time Asset Integrity Management platform for oil and gas production facilities.',
+    contributions: [
+      'Led delivery of asset-integrity software for production facilities, equipment, inspections, maintenance activities, and operational risk tracking.',
+      'Coordinated technical planning, implementation, code reviews, debugging, deployment, and long-term system maintenance.',
+      'Contributed to architectural and database decisions for a domain-heavy enterprise application.'
+    ]
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Klosters Energy Services',
+    period: 'Feb 2018 — Sep 2020',
+    type: 'Full-time',
+    summary:
+      'Designed and led the development of a Real-Time Asset Integrity Management system for monitoring equipment, inspections, maintenance activities, and operational risks across oil and gas production facilities.',
+    contributions: [
+      'Translated complex asset-integrity and operational requirements into maintainable software workflows and data models.',
+      'Designed backend services and APIs supporting facility assets, inspections, maintenance records, integrity assessments, and operational reporting.',
+      'Modelled relationships between production facilities, equipment, components, inspection findings, risks, and corrective actions.',
+      'Led technical implementation and coordinated engineering work across backend and user-facing application components.',
+      'Built tools that improved the capture, organisation, and visibility of asset-integrity information.',
+      'Worked closely with domain stakeholders to convert engineering processes and industry terminology into usable software.'
+    ]
+  },
+  {
+    role: 'System Engineer',
+    period: '2012 — 2018',
+    type: 'Systems',
+    summary: 'Built and maintained a VTU platform supporting airtime, data purchases, and automated bill payments.',
+    contributions: [
+      'Maintained systems for airtime, data, and bill-payment workflows.',
+      'Supported automated transaction processing and day-to-day platform reliability.'
     ]
   }
 ];
@@ -228,7 +283,7 @@ export default function App() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-10 text-base font-bold">
-            {['About', 'Series', 'Experience', 'Capabilities', 'Ideas'].map(item => (
+            {NAV_ITEMS.map(item => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -237,7 +292,7 @@ export default function App() {
                 {item}
               </button>
             ))}
-            <a href="https://eg9s59jicl.ufs.sh/f/THHO6iJF1C0ZRqj0Xmk1Z6m3CcVJB9kOguyrPx2Mv8GEenzX" target="_blank" rel="noreferrer" className="text-zinc-700 hover:text-[#4F5849] transition-colors">
+            <a href="https://eg9s59jicl.ufs.sh/f/THHO6iJF1C0ZnSvLP5cQsCP8aI1E6ScoKvJ7OGi53qtk2w0u" target="_blank" rel="noreferrer" className="text-zinc-700 hover:text-[#4F5849] transition-colors">
               Resume
             </a>
           </nav>
@@ -264,7 +319,7 @@ export default function App() {
         {/* Mobile Dropdown */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 right-0 bg-[#FDFBF7] border-b border-zinc-200 px-6 py-4 space-y-4 shadow-xl">
-            {['About', 'Series', 'Experience', 'Capabilities', 'Ideas'].map(item => (
+            {NAV_ITEMS.map(item => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -273,7 +328,7 @@ export default function App() {
                 {item}
               </button>
             ))}
-            <a href="https://eg9s59jicl.ufs.sh/f/THHO6iJF1C0ZRqj0Xmk1Z6m3CcVJB9kOguyrPx2Mv8GEenzX" target="_blank" rel="noreferrer" className="block w-full text-left py-2 text-lg font-bold">
+            <a href="https://eg9s59jicl.ufs.sh/f/THHO6iJF1C0ZnSvLP5cQsCP8aI1E6ScoKvJ7OGi53qtk2w0u" target="_blank" rel="noreferrer" className="block w-full text-left py-2 text-lg font-bold">
               Resume
             </a>
             <button
@@ -301,10 +356,10 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
               <button
-                onClick={() => scrollToSection('series')}
+                onClick={() => scrollToSection('experience')}
                 className="w-full sm:w-auto bg-[#4F5849] hover:bg-[#3D4537] text-white font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2 text-lg group shadow-sm"
               >
-                Explore the architecture series
+                View experience
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
@@ -357,6 +412,7 @@ export default function App() {
         </div>
 
         {/* 4. ARCHITECTURE BEYOND THE DIAGRAM */}
+        {SHOW_ARCHITECTURE_SERIES && (
         <section id="series" className="max-w-7xl mx-auto px-6 py-24 md:py-32">
           <div className="mb-12">
             <h2 className="text-sm font-bold text-zinc-400 uppercase tracking-widest mb-2">— Architecture Beyond the Diagram</h2>
@@ -422,6 +478,7 @@ export default function App() {
             ))}
           </div>
         </section>
+        )}
 
         {/* 5. HOW I WORK */}
         <section className="bg-[#2D3328] text-white py-24 md:py-32">
@@ -496,7 +553,12 @@ export default function App() {
                         {exp.type}
                       </span>
                       <h3 className="text-3xl font-black mt-3">{exp.role}</h3>
-                      <p className="text-zinc-500 font-bold text-lg mt-1">{exp.company}</p>
+                      {exp.company && (
+                        <p className="text-zinc-500 font-bold text-lg mt-1">{exp.company}</p>
+                      )}
+                      {exp.location && (
+                        <p className="text-zinc-500 text-sm font-semibold mt-1">{exp.location}</p>
+                      )}
                     </div>
                     <span className="text-base font-mono font-bold text-zinc-500 bg-[#F4F1EA] px-4 py-2 rounded border border-zinc-200 w-fit">
                       {exp.period}
@@ -766,7 +828,7 @@ export default function App() {
             <a href="https://github.com/princeomonu" target="_blank" rel="noreferrer" className="hover:text-[#A8B59E] transition-colors">GitHub</a>
             <a href="https://linkedin.com/in/princeomonu" target="_blank" rel="noreferrer" className="hover:text-[#A8B59E] transition-colors">LinkedIn</a>
             <a href="https://www.youtube.com/@princeomonu" target="_blank" rel="noreferrer" className="hover:text-[#A8B59E] transition-colors">YouTube</a>
-            <a href="https://eg9s59jicl.ufs.sh/f/THHO6iJF1C0ZRqj0Xmk1Z6m3CcVJB9kOguyrPx2Mv8GEenzX" target="_blank" rel="noreferrer" className="hover:text-[#A8B59E] transition-colors">Resume</a>
+            <a href="https://eg9s59jicl.ufs.sh/f/THHO6iJF1C0ZnSvLP5cQsCP8aI1E6ScoKvJ7OGi53qtk2w0u" target="_blank" rel="noreferrer" className="hover:text-[#A8B59E] transition-colors">Resume</a>
             <a href="mailto:hello@princeomonu.com" className="hover:text-[#A8B59E] transition-colors">Email</a>
           </div>
         </div>
